@@ -18,7 +18,7 @@ public class Main {
         // You can optionally pass a Settings object here,
         // constructed using Settings.Builder
         JBrowserDriver driver = new JBrowserDriver(Settings.builder().
-                timezone(Timezone.AMERICA_NEWYORK).build());
+                timezone(Timezone.AMERICA_NEWYORK).ajaxWait(200).quickRender(false).build());
 
         // This will block for the page load and any
         // associated AJAX requests
